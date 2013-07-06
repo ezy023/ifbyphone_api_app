@@ -1,6 +1,10 @@
 require 'sinatra'
 require 'twitter'
 
+get '/' do
+  erb :index
+end
+
 get '/phone_answers' do
   get_user_tweets("ifbyphone").text
 end
