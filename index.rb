@@ -10,7 +10,7 @@ get '/phone_answers' do
 end
 
 def twitter_client
-  erik = Twitter::Client.new(
+  client = Twitter::Client.new(
     consumer_key: "heF3MKMbjVGmuWSBAfp3SA",
     consumer_secret: "Y16MH3ULDZiqT2XNuag6Ti35w3LdtMMvx8ZPOo4Sn00",
   )
